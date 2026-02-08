@@ -1,0 +1,105 @@
+/* =====================
+   ベース
+===================== */
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #0f172a;
+  color: #e5e7eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 24px;
+}
+
+h1 {
+  margin: 0 0 24px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* =====================
+   レイアウト
+===================== */
+.container {
+  width: 100%;
+  padding: 16px;
+}
+
+.login-form {
+  background-color: #111827;
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 32px;
+  border-radius: 5px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #cbd5f5;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 3px;
+  border: none;
+  background-color: #1f2937;
+  color: #e5e7eb;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+input::placeholder {
+  color: #9ca3af;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #2563eb;
+}
+
+.btn-signin {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-signin:hover {
+  background-color: #1d4ed8;
+}
+
+.footer-text {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+.footer-text a {
+  color: #60a5fa;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-text a:hover {
+  text-decoration: underline;
+}

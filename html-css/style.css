@@ -1,0 +1,90 @@
+/* =====================
+   ベース
+===================== */
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background: #ffffff;
+}
+
+h1,
+h2 {
+  color: #757575;
+}
+
+/* =====================
+   レイアウト
+===================== */
+.grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+/* =====================
+   セル共通
+===================== */
+.cell,
+.cellb,
+.cellc {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #598128;
+  font-weight: 600;
+}
+
+/* =====================
+   各セル
+===================== */
+.cell {
+  height: 50px;
+  background: #C5E99B;
+  border-radius: 6px;
+
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.cell:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.cellb {
+  height: 160px;
+
+  background: #8CD790;
+  border-radius: 3px;
+  box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.15);
+
+  font-size: 24px;
+  line-height: 1.4;
+
+  transition: background-color 0.4s ease-out;
+}
+
+.cellb:hover {
+  background: #A8E6AF;
+}
+
+.cellc {
+  height: 80px;
+  background: #C5E99B;
+  border-radius: 3px;
+}
